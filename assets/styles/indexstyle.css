@@ -1,0 +1,155 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'BalooThambi2';
+    src: url('../fonts/BalooThambi2-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../fonts/Merriweather-Light.ttf') format('truetype');
+}
+
+header {
+    background-color: black;
+}
+
+body {
+    background: linear-gradient(125deg, black 80%, rgb(18, 18, 53), rgb(255, 255, 255));
+}
+
+main {
+    background-image: url("../images/coconut-background.png");
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+
+header {
+    padding: 2%;
+}
+
+h1 {
+    display: inline-block;
+    font-family: 'Merriweather';
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    margin-left: 10%;
+    font-weight: 350;
+    text-shadow: 2px 2px 5px white;
+}
+
+h2 {
+    margin: 1%;
+    display: inline-block;
+    transform: rotate(-10deg);
+    font-family: 'BalooThambi2';
+    color: transparent;
+    background-color: transparent;
+    background-image: linear-gradient(to left, #7768cc, #7B68EE, #3498db, #FFD700, #2ecc71, #7B68EE, #7768cc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: colorChangeInSecondaryTitle 3s linear infinite;
+    background-size: 500%; 
+    font-size: 30px;
+}
+
+main section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    left: -100%;
+    transition: left 1s;
+}
+
+#logo2djs {
+    padding-top: 3%;
+}
+
+section img {
+    opacity: 0.9;
+    margin: 50px;
+    border-radius: 25px;
+}
+
+.image1 {
+    width: 80%;
+    animation: shake 0.1s infinite;
+}
+
+.image1:hover {
+    animation: none;
+}
+
+.image2 {
+    width: 21%;
+}
+
+.image2:hover {
+    animation: shake 0.1s infinite;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+}
+
+article video {
+    border-radius: 18px;
+    animation-duration: 3s;
+    opacity: 0.9;
+    margin: 5%;
+    width: 70%;
+}
+
+footer {
+    display: flex;
+    color: white;
+    height: 40px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+@keyframes colorChangeInSecondaryTitle {
+    from {
+        background-position: 0% 50%;
+    }
+
+    to {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes slideIn1 {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
+@keyframes slideIn2 {
+    from {
+        margin-right: 100%;
+    }
+  
+    to {
+        margin-right: 0%;
+    }
+}
+
+@keyframes shake {
+    0%  { -webkit-transform:rotateZ(-3deg); }
+    50% { -webkit-transform:rotateZ( 0deg); }
+    100%{ -webkit-transform:rotateZ( 3deg); }
+}
