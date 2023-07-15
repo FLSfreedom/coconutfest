@@ -153,3 +153,22 @@ footer {
     50% { -webkit-transform:rotateZ( 0deg); }
     100%{ -webkit-transform:rotateZ( 3deg); }
 }
+
+@media screen and (max-width: 523px) {
+    h1 {
+        font-size: 41px;
+        margin-left: 0%;
+    }
+    h2 {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 392px) {
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
