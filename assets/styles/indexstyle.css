@@ -86,13 +86,16 @@ section img {
 
 .image1:hover {
     animation: none;
+    opacity: 1;
 }
 
 .image2 {
     width: 21%;
+    opacity: 0.9;
 }
 
 .image2:hover {
+    opacity: 1;
     animation: shake 0.1s infinite;
 }
 
@@ -104,8 +107,8 @@ article {
 article video {
     border-radius: 18px;
     animation-duration: 3s;
-    opacity: 0.9;
     margin: 5%;
+    opacity: 0.9;
     width: 70%;
 }
 
@@ -162,6 +165,13 @@ footer {
     h2 {
         font-size: 23px;
     }
+    .image1 {
+        width: 95%;
+    }
+    .image2 {
+        width: 40%;
+        opacity: 0.9;
+    }
 }
 
 @media screen and (max-width: 392px) {
@@ -170,5 +180,9 @@ footer {
     }
     h2 {
         font-size: 20px;
+    }
+    .image2 {
+        width: 60%;
+        opacity: 0.9;
     }
 }
