@@ -1,18 +1,19 @@
-let scrollQ_secondlogo = 0;
+window.addEventListener('scroll', function() {
+  const logo2djs = document.getElementById("logo2djs");
+  const logo2djs2 = document.getElementById("logo2djs2");
+  const logo2djs2Position = logo2djs2.offsetTop;
 
-if(screen.width <= 450) {
-  scrollQ_secondlogo = 200} else if (screen.width <= 600) {
-    scrollQ_secondlogo = 350
-} else {
-    scrollQ_secondlogo = 1750  
-};
+  const positionForScrolling = logo2djs2Position - window.innerHeight;
 
-window.onscroll = function() {slideOnScrollLeft("logo2djs", 1), slideOnScrollLeft("logo2djs2", scrollQ_secondlogo)};
-
-function slideOnScrollLeft(selectedElement, scrollPosition) {
-  if (document.body.scrollTop > scrollPosition || document.documentElement.scrollTop > scrollPosition) {
-    document.getElementById(selectedElement).style.left = "0px";
+  if (window.scrollY > 1) {
+      logo2djs.style.left = "0px";
   } else {
-    document.getElementById(selectedElement).style.left = "-100%";
+      logo2djs.style.left = "-100%";
   }
-}
+
+  if (window.scrollY > positionForScrolling) {
+      logo2djs2.style.left = "0px";
+  } else {
+      logo2djs2.style.left = "100%";
+  }
+});

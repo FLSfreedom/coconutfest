@@ -22,13 +22,13 @@ body {
 }
 
 main {
+    overflow-x: hidden;
+    overflow-y: hidden;
     background-image: url("../images/coconut-background.png");
-    background-size: 100%;
+    background-size: 100% 200%;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
-
-
 
 header {
     padding: 2%;
@@ -73,6 +73,12 @@ main section {
     padding-top: 3%;
 }
 
+#logo2djs2 {
+    top: 20px;
+    left: 100%;
+    transition: left 1.5s;
+}
+
 section img {
     opacity: 0.9;
     margin: 50px;
@@ -91,7 +97,6 @@ section img {
 
 .image2 {
     width: 21%;
-    opacity: 0.9;
 }
 
 .image2:hover {
@@ -131,26 +136,6 @@ footer {
     }
 }
 
-@keyframes slideIn1 {
-    from {
-        margin-left: 100%;
-    }
-
-    to {
-        margin-left: 0%;
-    }
-}
-
-@keyframes slideIn2 {
-    from {
-        margin-right: 100%;
-    }
-  
-    to {
-        margin-right: 0%;
-    }
-}
-
 @keyframes shake {
     0%  { -webkit-transform:rotateZ(-3deg); }
     50% { -webkit-transform:rotateZ( 0deg); }
@@ -183,6 +168,5 @@ footer {
     }
     .image2 {
         width: 60%;
-        opacity: 0.9;
     }
 }
